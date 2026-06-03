@@ -1,0 +1,260 @@
+---
+title: ""
+page-layout: custom
+toc: false
+---
+
+```{=html}
+<!-- ── HERO ──────────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">&#9679;&nbsp; QIBAR Center &nbsp;·&nbsp; Bamako, Mali</div>
+    <h1>L'information<br><span>au service de la décision.</span></h1>
+    <p class="hero-sub">
+      Analyse de données, épidémiologie et formation R pour chercheurs,
+      étudiants et institutions en Afrique et dans la diaspora.
+    </p>
+    <div class="hero-ctas">
+      <a href="services.html" class="btn-primary">Découvrir nos services →</a>
+      <a href="https://boozygit.github.io/Blog/" target="_blank" class="btn-secondary">Lire le blog QIBAR</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <span class="stat-val">R</span>
+        <span class="stat-label">Langage principal</span>
+      </div>
+      <div>
+        <span class="stat-val">3</span>
+        <span class="stat-label">Pôles d'expertise</span>
+      </div>
+      <div>
+        <span class="stat-val">AF</span>
+        <span class="stat-label">Ancré en Afrique</span>
+      </div>
+      <div>
+        <span class="stat-val">FR·EN</span>
+        <span class="stat-label">Bilingue</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── NOS PÔLES ─────────────────────────────────────────────────────────── -->
+<section class="section" style="background:#fff">
+  <div class="container-qibar">
+    <div class="sec-label">
+      <h2>Nos pôles d'expertise</h2>
+      <div class="sec-line"></div>
+    </div>
+    <p style="color:var(--qibar-gris);max-width:600px;margin-bottom:2rem">
+      QIBAR Center regroupe trois entités complémentaires, chacune dédiée à un
+      aspect de la chaîne de valeur de la donnée en santé.
+    </p>
+    <div class="branches-grid">
+
+      <div class="branch-card conseil">
+        <div class="branch-icon">🎯</div>
+        <p class="branch-name">QIBAR Conseil</p>
+        <p class="branch-desc">
+          Accompagnement personnalisé pour l'analyse de vos données de recherche —
+          mémoires, thèses, articles scientifiques, rapports d'étude et études pour ONG.
+        </p>
+        <a href="services.html#conseil" class="branch-link">En savoir plus →</a>
+      </div>
+
+      <div class="branch-card academie">
+        <div class="branch-icon">🎓</div>
+        <p class="branch-name">QIBAR Académie</p>
+        <p class="branch-desc">
+          Formations R en groupe ou en individuel : initiation, analyse épidémiologique,
+          méta-analyse, cartographie, visualisation publication-ready.
+        </p>
+        <a href="services.html#academie" class="branch-link">En savoir plus →</a>
+      </div>
+
+      <div class="branch-card lab">
+        <div class="branch-icon">⚗️</div>
+        <p class="branch-name">QIBAR Lab</p>
+        <p class="branch-desc">
+          Développement d'outils sur mesure — dashboards Shiny, rapports automatisés,
+          pipelines d'analyse reproductibles pour institutions et partenaires techniques.
+        </p>
+        <a href="services.html#lab" class="branch-link">En savoir plus →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── COMMENT ON TRAVAILLE ──────────────────────────────────────────────── -->
+<section class="section" style="background:var(--qibar-sable)">
+  <div class="container-qibar">
+    <div class="sec-label">
+      <h2>Comment on travaille</h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="process-num">1</div>
+        <h4>Vous nous écrivez</h4>
+        <p>Décrivez votre projet, vos données et votre objectif via le formulaire de devis ou par email.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">2</div>
+        <h4>On évalue ensemble</h4>
+        <p>Échange de 30 minutes pour cadrer le besoin, évaluer la faisabilité et proposer un devis clair.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">3</div>
+        <h4>On analyse</h4>
+        <p>Traitement rigoureux sous R avec un script documenté, reproductible et commenté.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">4</div>
+        <h4>On livre et explique</h4>
+        <p>Rapport, figures et code livrés. Session d'explication incluse pour que vous maîtrisiez vos résultats.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TÉMOIGNAGES ────────────────────────────────────────────────────────── -->
+<section class="section" style="background:#fff">
+  <div class="container-qibar">
+    <div class="sec-label">
+      <h2>Ils nous ont fait confiance</h2>
+      <div class="sec-line"></div>
+    </div>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "L'analyse de mes données de thèse était bloquée depuis des semaines.
+          En deux séances, tout était clair — les tableaux, les graphiques et surtout
+          l'interprétation. J'ai pu soutenir avec confiance."
+        </p>
+        <div class="testimonial-author">
+          <div class="author-avatar">AF</div>
+          <div>
+            <p class="author-name">Aminata F.</p>
+            <p class="author-role">Étudiante en master de santé publique, FMOS</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "Notre équipe devait présenter des indicateurs de suivi à nos bailleurs
+          sous 48h. QIBAR Lab a produit un dashboard Shiny en un temps record.
+          Nos partenaires ont été impressionnés."
+        </p>
+        <div class="testimonial-author">
+          <div class="author-avatar">SK</div>
+          <div>
+            <p class="author-name">Seydou K.</p>
+            <p class="author-role">Coordinateur de projet, ONG santé, Bamako</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <p class="testimonial-text">
+          "La formation R organisée pour mon équipe a complètement changé notre
+          façon de travailler. On a arrêté Excel pour les analyses. Le retour sur
+          investissement est immédiat."
+        </p>
+        <div class="testimonial-author">
+          <div class="author-avatar">MD</div>
+          <div>
+            <p class="author-name">Dr. Mariam D.</p>
+            <p class="author-role">Médecin chercheur, CRLD</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── BLOG PREVIEW ───────────────────────────────────────────────────────── -->
+<section class="section" style="background:var(--qibar-sable)">
+  <div class="container-qibar">
+    <div class="sec-label">
+      <h2>Du blog QIBAR</h2>
+      <div class="sec-line"></div>
+    </div>
+    <p style="color:var(--qibar-gris);margin-bottom:1.75rem">
+      Boozy partage chaque mois ses blocages, ses découvertes et ses scripts R.
+      Gratuit, sans jargon, ancré dans la recherche en santé africaine.
+    </p>
+    <div class="blog-grid">
+
+      <a href="https://boozygit.github.io/Blog/posts/031-boozy-solitude-chercheur/index.html"
+         target="_blank" class="blog-card">
+        <div class="blog-card-img">🧠</div>
+        <div class="blog-card-body">
+          <p class="blog-card-cat">Soft Skills · Mindset</p>
+          <p class="blog-card-title">[Boozy] : Je me sens seul dans ma recherche — est-ce normal ?</p>
+          <p class="blog-card-desc">L'isolement cognitif, le biais du super-expert, et 3 règles pour s'en sortir.</p>
+        </div>
+      </a>
+
+      <a href="https://boozygit.github.io/Blog/posts/001-boozy-idee-question-recherche/index.html"
+         target="_blank" class="blog-card">
+        <div class="blog-card-img">💡</div>
+        <div class="blog-card-body">
+          <p class="blog-card-cat">Méthodologie · Épidémiologie</p>
+          <p class="blog-card-title">[Boozy] : J'ai une idée de recherche — mais comment en faire une vraie question ?</p>
+          <p class="blog-card-desc">Entonnoir conceptuel, cadre PICO et critères SMART expliqués simplement.</p>
+        </div>
+      </a>
+
+      <a href="https://boozygit.github.io/Blog/posts/005-boozy-excel-vers-r/index.html"
+         target="_blank" class="blog-card">
+        <div class="blog-card-img">📊</div>
+        <div class="blog-card-body">
+          <p class="blog-card-cat">Analyse & R · Outils</p>
+          <p class="blog-card-title">[Boozy] : Pourquoi je ne veux plus jamais manipuler mes données dans Excel</p>
+          <p class="blog-card-desc">Reproductibilité, automatisation et dignité du chercheur — bienvenue dans R.</p>
+        </div>
+      </a>
+
+    </div>
+    <div style="text-align:center;margin-top:2rem">
+      <a href="https://boozygit.github.io/Blog/" target="_blank" class="btn-primary">
+        Voir tous les articles →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── NEWSLETTER ─────────────────────────────────────────────────────────── -->
+<section style="padding:0 1.5rem 3rem">
+  <div class="container-qibar">
+    <div class="newsletter-section">
+      <h2 style="border:none;margin-top:0">Restez informé</h2>
+      <p>Les nouvelles ressources QIBAR, les articles de Boozy et les offres de formation
+         directement dans votre boîte mail. Pas de spam.</p>
+      <!-- Remplacer l'action par votre URL Brevo -->
+      <form class="newsletter-form"
+            action="VOTRE_URL_BREVO"
+            method="post">
+        <input type="email" name="EMAIL" placeholder="votre@email.com" required>
+        <button type="submit" class="btn-primary">S'abonner →</button>
+      </form>
+      <p class="newsletter-note">Désabonnement en un clic · Aucune publicité</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA FINAL ──────────────────────────────────────────────────────────── -->
+<section style="padding:0 1.5rem 4rem">
+  <div class="container-qibar">
+    <div class="cta-banner">
+      <p><strong>Un projet d'analyse, une thèse à finaliser, une formation à organiser ?</strong><br>
+         Décrivez-nous votre besoin — on vous répond sous 48h.</p>
+      <a href="contact.html" class="btn-primary">Demander un devis →</a>
+    </div>
+  </div>
+</section>
+```

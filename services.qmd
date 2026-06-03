@@ -1,0 +1,242 @@
+---
+title: ""
+page-layout: custom
+toc: false
+---
+
+```{=html}
+<style>
+.service-hero{background:linear-gradient(135deg,#0C2440,#1A3A5C);padding:3.5rem 1.5rem;text-align:center}
+.service-hero h1{color:#fff;font-family:Georgia,serif;font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 .75rem;border:none;padding:0}
+.service-hero h1 span{color:#C8A96E}
+.service-hero p{color:#B5C8DD;font-size:1rem;max-width:560px;margin:0 auto}
+
+.service-section{padding:4rem 0}
+.service-header{display:flex;align-items:center;gap:14px;margin-bottom:1.5rem}
+.service-badge{width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0}
+.service-header h2{font-family:Georgia,serif;font-size:1.6rem;margin:0;border:none;padding:0}
+
+.offers-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:1.5rem 0}
+.offer-card{border:0.5px solid var(--qibar-bordure);border-radius:var(--radius-md);padding:1.2rem;background:#fff;box-shadow:var(--shadow-sm)}
+.offer-name{font-size:.88rem;font-weight:700;color:var(--qibar-bleu);margin:0 0 4px;text-transform:uppercase;letter-spacing:.05em}
+.offer-desc{font-size:.85rem;color:var(--qibar-gris);margin:0 0 .9rem;line-height:1.55}
+.offer-price{font-family:Georgia,serif;font-size:1.2rem;font-weight:700;margin:0 0 2px}
+.offer-price-note{font-size:.75rem;color:var(--qibar-gris);margin:0}
+
+.audience-chips{display:flex;flex-wrap:wrap;gap:8px;margin:1rem 0}
+.chip{font-size:.78rem;padding:4px 12px;border-radius:99px;border:0.5px solid}
+
+.includes-list{list-style:none;padding:0;margin:1rem 0}
+.includes-list li{display:flex;align-items:flex-start;gap:8px;font-size:.9rem;color:var(--qibar-terre);padding:.35rem 0;border-bottom:0.5px solid var(--qibar-bordure)}
+.includes-list li:last-child{border:none}
+.includes-list .check{color:#2D7A5F;font-size:1rem;flex-shrink:0;margin-top:2px}
+
+.section-divider{height:1px;background:linear-gradient(to right,transparent,var(--qibar-bordure),transparent);margin:1rem 0}
+</style>
+
+<!-- ── PAGE HERO ──────────────────────────────────────────────────────────── -->
+<div class="service-hero">
+  <h1>Nos <span>services</span></h1>
+  <p>Trois pôles complémentaires pour vous accompagner de la donnée brute
+     à la décision éclairée — avec la rigueur du chercheur.</p>
+</div>
+
+<div class="page-content">
+
+<!-- ── QIBAR CONSEIL ─────────────────────────────────────────────────────── -->
+<section class="service-section" id="conseil">
+  <div class="service-header">
+    <div class="service-badge" style="background:#FBF5EB">🎯</div>
+    <div>
+      <h2 style="color:#8B6F3A">QIBAR Conseil</h2>
+      <p style="margin:0;font-size:.9rem;color:var(--qibar-gris)">Analyse de données sur mesure pour la recherche et les projets</p>
+    </div>
+  </div>
+
+  <p>Vous avez des données collectées sur le terrain, dans un hôpital, via KoboToolbox ou Excel.
+     Vous avez besoin d'analyses rigoureuses, de tableaux publication-ready, et quelqu'un qui comprend
+     à la fois le contexte clinique <em>et</em> les méthodes statistiques. C'est QIBAR Conseil.</p>
+
+  <p style="font-size:.88rem;color:var(--qibar-gris);margin-bottom:1.25rem">À qui ça s'adresse :</p>
+  <div class="audience-chips">
+    <span class="chip" style="background:#FBF5EB;color:#8B6F3A;border-color:#D4B87A">🎓 Étudiants master / doctorat</span>
+    <span class="chip" style="background:#EEF2F7;color:#1A3A5C;border-color:#7A9AB8">🔬 Chercheurs & médecins</span>
+    <span class="chip" style="background:#EBF5F0;color:#2D7A5F;border-color:#9FE1CB">🏥 ONG & institutions de santé</span>
+    <span class="chip" style="background:#F3EEFA;color:#6B4C9A;border-color:#C4AFDF">🌍 Diaspora & international</span>
+  </div>
+
+  <div class="offers-grid">
+    <div class="offer-card">
+      <p class="offer-name">Pack Mémoire Master</p>
+      <p class="offer-desc">Statistiques descriptives + inférentielle, figures, interprétation, aide à la rédaction Méthodes & Résultats.</p>
+      <p class="offer-price" style="color:#8B6F3A">80 000 – 150 000 FCFA</p>
+      <p class="offer-price-note">~120 – 230 $</p>
+    </div>
+    <div class="offer-card">
+      <p class="offer-name">Pack Thèse Doctorat</p>
+      <p class="offer-desc">Analyse complète, modélisation multivariée, figures publication-ready, révisions incluses.</p>
+      <p class="offer-price" style="color:#8B6F3A">200 000 – 400 000 FCFA</p>
+      <p class="offer-price-note">~300 – 600 $</p>
+    </div>
+    <div class="offer-card">
+      <p class="offer-name">Article Scientifique</p>
+      <p class="offer-desc">Analyse statistique pour soumission dans une revue indexée, avec script R reproductible.</p>
+      <p class="offer-price" style="color:#8B6F3A">100 000 – 250 000 FCFA</p>
+      <p class="offer-price-note">~150 – 380 $</p>
+    </div>
+    <div class="offer-card">
+      <p class="offer-name">Rapport ONG / Institution</p>
+      <p class="offer-desc">Analyse exploratoire, cartographie, tableaux de bord, rapport synthétique avec visualisations.</p>
+      <p class="offer-price" style="color:#8B6F3A">150 000 – 350 000 FCFA</p>
+      <p class="offer-price-note">Selon volume</p>
+    </div>
+  </div>
+
+  <p style="font-size:.88rem;color:var(--qibar-gris);margin:.5rem 0 .75rem">Chaque mission inclut :</p>
+  <ul class="includes-list">
+    <li><span class="check">✓</span> Script R commenté et reproductible livré avec les résultats</li>
+    <li><span class="check">✓</span> Figures exportées en haute résolution (300 dpi) prêtes pour publication</li>
+    <li><span class="check">✓</span> Session d'explication des résultats (30–60 min, visio ou en présentiel)</li>
+    <li><span class="check">✓</span> Révision incluse si les données changent en cours de mission</li>
+    <li><span class="check">✓</span> Devis gratuit et sans engagement sous 48h</li>
+  </ul>
+
+  <div style="margin-top:1.5rem">
+    <a href="contact.html" class="btn-primary">Demander un devis Conseil →</a>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ── QIBAR ACADÉMIE ─────────────────────────────────────────────────────── -->
+<section class="service-section" id="academie">
+  <div class="service-header">
+    <div class="service-badge" style="background:#EBF5F0">🎓</div>
+    <div>
+      <h2 style="color:#2D7A5F">QIBAR Académie</h2>
+      <p style="margin:0;font-size:.9rem;color:var(--qibar-gris)">Formations R adaptées aux professionnels de santé et chercheurs</p>
+    </div>
+  </div>
+
+  <p>Vous voulez maîtriser R — mais vous n'êtes pas informaticien, vous êtes médecin, infirmier,
+     épidémiologiste ou coordinateur de projet. QIBAR Académie propose des formations calibrées
+     pour votre réalité : données de santé, contexte africain, outils directement applicables.</p>
+
+  <div class="audience-chips">
+    <span class="chip" style="background:#EBF5F0;color:#2D7A5F;border-color:#9FE1CB">🏥 Équipes de recherche</span>
+    <span class="chip" style="background:#EBF5F0;color:#2D7A5F;border-color:#9FE1CB">🎓 Étudiants & résidents</span>
+    <span class="chip" style="background:#EBF5F0;color:#2D7A5F;border-color:#9FE1CB">🌍 Équipes ONG</span>
+    <span class="chip" style="background:#EBF5F0;color:#2D7A5F;border-color:#9FE1CB">🏛️ Universités & facultés</span>
+  </div>
+
+  <div class="offers-grid">
+    <div class="offer-card">
+      <p class="offer-name">Initiation à R</p>
+      <p class="offer-desc">Import de données, nettoyage, statistiques descriptives, premiers graphiques ggplot2.</p>
+      <p class="offer-price" style="color:#2D7A5F">30 000 – 50 000 FCFA</p>
+      <p class="offer-price-note">Par personne · 2 séances de 2h</p>
+    </div>
+    <div class="offer-card">
+      <p class="offer-name">Analyse épidémiologique</p>
+      <p class="offer-desc">Tests statistiques, régression logistique, analyse de survie, tableaux gtsummary.</p>
+      <p class="offer-price" style="color:#2D7A5F">50 000 – 80 000 FCFA</p>
+      <p class="offer-price-note">Par personne · 3 séances</p>
+    </div>
+    <div class="offer-card">
+      <p class="offer-name">Méta-analyse sous R</p>
+      <p class="offer-desc">Forest plots, hétérogénéité, biais de publication — packages meta et metafor.</p>
+      <p class="offer-price" style="color:#2D7A5F">80 000 – 120 000 FCFA</p>
+      <p class="offer-price-note">Par personne · 4 séances</p>
+    </div>
+    <div class="offer-card">
+      <p class="offer-name">Formation groupe (5–15 pers.)</p>
+      <p class="offer-desc">Programme sur mesure pour votre équipe, en présentiel à Bamako ou en visioconférence.</p>
+      <p class="offer-price" style="color:#2D7A5F">Sur devis</p>
+      <p class="offer-price-note">Selon durée et programme</p>
+    </div>
+  </div>
+
+  <ul class="includes-list">
+    <li><span class="check">✓</span> Support de cours et scripts R envoyés avant chaque séance</li>
+    <li><span class="check">✓</span> Exercices sur des données réelles de santé (anonymisées)</li>
+    <li><span class="check">✓</span> Accès au replay vidéo 30 jours après la formation</li>
+    <li><span class="check">✓</span> Attestation de formation délivrée par QIBAR Center</li>
+    <li><span class="check">✓</span> Suivi post-formation par email pendant 2 semaines</li>
+  </ul>
+
+  <div style="margin-top:1.5rem">
+    <a href="contact.html" class="btn-primary" style="background:#2D7A5F">S'inscrire à une formation →</a>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ── QIBAR LAB ──────────────────────────────────────────────────────────── -->
+<section class="service-section" id="lab">
+  <div class="service-header">
+    <div class="service-badge" style="background:#F3EEFA">⚗️</div>
+    <div>
+      <h2 style="color:#6B4C9A">QIBAR Lab</h2>
+      <p style="margin:0;font-size:.9rem;color:var(--qibar-gris)">Outils sur mesure pour institutions, ONG et partenaires techniques</p>
+    </div>
+  </div>
+
+  <p>Votre organisation a des besoins récurrents en analyse de données — des rapports mensuels à
+     produire, des indicateurs à surveiller, des données à centraliser. QIBAR Lab développe les
+     outils qui automatisent ce travail et libèrent votre équipe pour l'essentiel.</p>
+
+  <div class="audience-chips">
+    <span class="chip" style="background:#F3EEFA;color:#6B4C9A;border-color:#C4AFDF">🏛️ Institutions de santé</span>
+    <span class="chip" style="background:#F3EEFA;color:#6B4C9A;border-color:#C4AFDF">🌍 ONG & projets bailleurs</span>
+    <span class="chip" style="background:#F3EEFA;color:#6B4C9A;border-color:#C4AFDF">🔬 Centres de recherche</span>
+    <span class="chip" style="background:#F3EEFA;color:#6B4C9A;border-color:#C4AFDF">📊 Directions médicales</span>
+  </div>
+
+  <div class="offers-grid">
+    <div class="offer-card">
+      <p class="offer-name">Dashboard Shiny</p>
+      <p class="offer-desc">Tableau de bord interactif pour le suivi d'indicateurs en temps réel, accessible en ligne.</p>
+      <p class="offer-price" style="color:#6B4C9A">300 000 – 600 000 FCFA</p>
+      <p class="offer-price-note">Selon complexité</p>
+    </div>
+    <div class="offer-card">
+      <p class="offer-name">Rapport automatisé</p>
+      <p class="offer-desc">Pipeline R Markdown / Quarto : rapport mensuel généré automatiquement depuis vos données.</p>
+      <p class="offer-price" style="color:#6B4C9A">150 000 – 300 000 FCFA</p>
+      <p class="offer-price-note">+ maintenance optionnelle</p>
+    </div>
+    <div class="offer-card">
+      <p class="offer-name">Cartographie épidémiologique</p>
+      <p class="offer-desc">Cartes interactives ou statiques pour vos zones d'intervention ou données de surveillance.</p>
+      <p class="offer-price" style="color:#6B4C9A">100 000 – 250 000 FCFA</p>
+      <p class="offer-price-note">Selon étendue géographique</p>
+    </div>
+    <div class="offer-card">
+      <p class="offer-name">Mission data longue durée</p>
+      <p class="offer-desc">Appui mensuel régulier : gestion des données, rapports, formation de l'équipe interne.</p>
+      <p class="offer-price" style="color:#6B4C9A">200 000 – 400 000 FCFA</p>
+      <p class="offer-price-note">Par mois</p>
+    </div>
+  </div>
+
+  <ul class="includes-list">
+    <li><span class="check">✓</span> Code source livré et documenté — vous êtes propriétaire de vos outils</li>
+    <li><span class="check">✓</span> Formation de votre équipe interne à l'utilisation des outils livrés</li>
+    <li><span class="check">✓</span> Maintenance et mises à jour pendant 3 mois après livraison</li>
+    <li><span class="check">✓</span> Contrat de service formalisé avec jalons et livrables</li>
+  </ul>
+
+  <div style="margin-top:1.5rem">
+    <a href="contact.html" class="btn-primary" style="background:#6B4C9A">Discuter d'un projet Lab →</a>
+  </div>
+</section>
+
+<!-- ── CTA FINAL ──────────────────────────────────────────────────────────── -->
+<div class="cta-banner">
+  <p><strong>Vous ne savez pas quel service correspond à votre besoin ?</strong><br>
+     Décrivez votre situation en quelques lignes — on vous oriente gratuitement.</p>
+  <a href="contact.html" class="btn-primary">Nous écrire →</a>
+</div>
+
+</div>
+```
