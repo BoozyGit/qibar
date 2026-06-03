@@ -94,7 +94,7 @@ toc: false
 
   <p style="font-size:.88rem;color:var(--qibar-gris);margin:.5rem 0 .75rem">Chaque mission inclut :</p>
   <ul class="includes-list">
-    <li><span class="check">✓</span> Script R commenté et reproductible livré avec les résultats</li>
+    <li><span class="check">✓</span> Script R commenté et reproductible livrable avec les résultats</li>
     <li><span class="check">✓</span> Figures exportées en haute résolution (300 dpi) prêtes pour publication</li>
     <li><span class="check">✓</span> Session d'explication des résultats (30–60 min, visio ou en présentiel)</li>
     <li><span class="check">✓</span> Révision incluse si les données changent en cours de mission</li>
@@ -194,7 +194,7 @@ toc: false
 
   <div class="offers-grid">
     <div class="offer-card">
-      <p class="offer-name">Dashboard Shiny</p>
+      <p class="offer-name">Dashboard</p>
       <p class="offer-desc">Tableau de bord interactif pour le suivi d'indicateurs en temps réel, accessible en ligne.</p>
       <p class="offer-price" style="color:#6B4C9A">300 000 – 600 000 FCFA</p>
       <p class="offer-price-note">Selon complexité</p>

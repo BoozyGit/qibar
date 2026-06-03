@@ -12,7 +12,7 @@ toc: false
     <h1>L'information<br><span>au service de la décision.</span></h1>
     <p class="hero-sub">
       Analyse de données, épidémiologie et formation R pour chercheurs,
-      étudiants et institutions en Afrique et dans la diaspora.
+      étudiants et institutions.
     </p>
     <div class="hero-ctas">
       <a href="services.html" class="btn-primary">Découvrir nos services →</a>
@@ -76,7 +76,7 @@ toc: false
         <div class="branch-icon">⚗️</div>
         <p class="branch-name">QIBAR Lab</p>
         <p class="branch-desc">
-          Développement d'outils sur mesure — dashboards Shiny, rapports automatisés,
+          Développement d'outils sur mesure — dashboards, rapports automatisés,
           pipelines d'analyse reproductibles pour institutions et partenaires techniques.
         </p>
         <a href="services.html#lab" class="branch-link">En savoir plus →</a>
@@ -136,8 +136,8 @@ toc: false
         <div class="testimonial-author">
           <div class="author-avatar">AF</div>
           <div>
-            <p class="author-name">Aminata F.</p>
-            <p class="author-role">Étudiante en master de santé publique, FMOS</p>
+            <p class="author-name">Amina F.</p>
+            <p class="author-role">Étudiante en master de santé publique</p>
           </div>
         </div>
       </div>
@@ -145,7 +145,7 @@ toc: false
       <div class="testimonial-card">
         <p class="testimonial-text">
           "Notre équipe devait présenter des indicateurs de suivi à nos bailleurs
-          sous 48h. QIBAR Lab a produit un dashboard Shiny en un temps record.
+          sous 48h. QIBAR Lab a produit un dashboard en un temps record.
           Nos partenaires ont été impressionnés."
         </p>
         <div class="testimonial-author">
@@ -167,7 +167,7 @@ toc: false
           <div class="author-avatar">MD</div>
           <div>
             <p class="author-name">Dr. Mariam D.</p>
-            <p class="author-role">Médecin chercheur, CRLD</p>
+            <p class="author-role">Médecin chercheur</p>
           </div>
         </div>
       </div>
@@ -185,7 +185,7 @@ toc: false
     </div>
     <p style="color:var(--qibar-gris);margin-bottom:1.75rem">
       Boozy partage chaque mois ses blocages, ses découvertes et ses scripts R.
-      Gratuit, sans jargon, ancré dans la recherche en santé africaine.
+      Gratuit, sans jargon, ancré dans la recherche en santé.
     </p>
     <div class="blog-grid">
 
@@ -237,9 +237,9 @@ toc: false
          directement dans votre boîte mail. Pas de spam.</p>
       <!-- Remplacer l'action par votre URL Brevo -->
       <form class="newsletter-form"
-            action="VOTRE_URL_BREVO"
+            action="https://05f21676.sibforms.com/serve/MUIFAHfzQavUsQ25ClxHkhgyITPxGFeTR79hKPi-i-VOfFk0F7R3HuIbFokqmCDqXvOhNsdF7CX5LhuQrvl6nKX_k08wLqu-LnjIdSjL4w2xH8boR3DhVGDterAmxByQH7Cyy5tWnpPJHGihMKzOlKClCXmgCFVLsj2_d9gZhFQu9U6QZK9zAQ0F-ABrMl4oZi1bgAJP8RPKvlo7LA=="
             method="post">
-        <input type="email" name="EMAIL" placeholder="votre@email.com" required>
+        <input type="email" name="EMAIL" placeholder="votre mail@email.com" required>
         <button type="submit" class="btn-primary">S'abonner →</button>
       </form>
       <p class="newsletter-note">Désabonnement en un clic · Aucune publicité</p>

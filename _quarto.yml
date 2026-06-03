@@ -33,13 +33,13 @@ website:
   page-footer:
     background: "#0C2440"
     foreground: "#7A9AB8"
-    left: "© 2025 **QIBAR Center** · Bamako, Mali"
+    left: "© 2026 **QIBAR Center** · Bamako, Mali"
     center: "*L'information au service de la décision.*"
     right:
       - icon: envelope
         href: mailto:mahamoud.koureichi@gmail.com
       - icon: linkedin
-        href: https://linkedin.com/in/VOTRE-PROFIL
+        href: https://linkedin.com/in/mahamoud-mahamadou-koureichi-b6a1361a7/
       - icon: github
         href: https://github.com/boozygit
 
