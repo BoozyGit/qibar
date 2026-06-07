@@ -4,5 +4,14 @@
   },
   "services.qmd": {
     "services.html": "dac0eeec"
+  },
+  "about.qmd": {
+    "about.html": "cbecd1c6"
+  },
+  "tarifs.qmd": {
+    "tarifs.html": "1a87ef55"
+  },
+  "contact.qmd": {
+    "contact.html": "9e887fbe"
   }
 }

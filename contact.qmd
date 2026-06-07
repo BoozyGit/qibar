@@ -1,0 +1,235 @@
+---
+title: ""
+page-layout: custom
+toc: false
+---
+
+```{=html}
+<style>
+.contact-hero {
+  background: linear-gradient(135deg, #0C2440, #1A3A5C);
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+}
+.contact-hero h1 {
+  color: #fff; font-family: Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin: 0 0 .6rem; border: none; padding: 0;
+}
+.contact-hero h1 span { color: #C8A96E; }
+.contact-hero p { color: #B5C8DD; max-width: 480px; margin: 0 auto; }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2.5rem;
+  align-items: start;
+  margin: 2.5rem 0;
+}
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* Formulaire */
+.contact-form-card {
+  background: #fff;
+  border: 0.5px solid var(--qibar-bordure);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+.contact-form-card h2 {
+  font-family: Georgia, serif;
+  font-size: 1.3rem; color: #1A3A5C;
+  margin: 0 0 .3rem; border: none; padding: 0;
+}
+.contact-form-card > p { font-size: .85rem; color: var(--qibar-gris); margin: 0 0 1.5rem; }
+.form-group { display: flex; flex-direction: column; gap: 4px; margin-bottom: 1rem; }
+.form-group label { font-size: .8rem; font-weight: 600; color: #1A3A5C; }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: .6rem .9rem;
+  border: 1px solid var(--qibar-bordure);
+  border-radius: var(--radius-sm);
+  font-size: .9rem; color: var(--qibar-terre);
+  background: #FAFAF8;
+  transition: border-color .2s;
+  font-family: inherit;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none; border-color: #1A3A5C; background: #fff;
+}
+.form-group textarea { resize: vertical; min-height: 110px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
+
+/* Infos contact */
+.contact-info { display: flex; flex-direction: column; gap: 12px; }
+.contact-item {
+  background: #fff;
+  border: 0.5px solid var(--qibar-bordure);
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1.2rem;
+  display: flex; align-items: flex-start; gap: 12px;
+  box-shadow: var(--shadow-sm);
+}
+.contact-item-icon {
+  width: 40px; height: 40px;
+  border-radius: var(--radius-sm);
+  background: #EEF2F7;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; flex-shrink: 0;
+}
+.contact-item-label { font-size: .75rem; font-weight: 700; color: var(--qibar-gris); text-transform: uppercase; letter-spacing: .06em; margin: 0 0 2px; }
+.contact-item-val   { font-size: .9rem; font-weight: 500; color: #1A3A5C; margin: 0; }
+.contact-item a     { color: #1A3A5C; text-decoration: none; }
+.contact-item a:hover { color: #C8A96E; }
+
+.response-box {
+  background: linear-gradient(135deg, #0C2440, #1A3A5C);
+  border-radius: var(--radius-md);
+  padding: 1.3rem;
+  text-align: center;
+  margin-top: 4px;
+}
+.response-box .rb-val {
+  font-family: Georgia, serif;
+  font-size: 1.6rem; font-weight: 700;
+  color: #C8A96E; display: block; line-height: 1;
+}
+.response-box .rb-label { font-size: .78rem; color: #7A9AB8; display: block; margin-top: 4px; }
+</style>
+
+<!-- HERO -->
+<div class="contact-hero">
+  <h1><span>Contactez</span>-nous</h1>
+  <p>Décrivez votre projet en quelques lignes — on vous répond sous 48h avec une proposition claire.</p>
+</div>
+
+<div class="page-content">
+  <div class="contact-grid">
+
+    <!-- Formulaire principal -->
+    <div class="contact-form-card">
+      <h2>Envoyez-nous un message</h2>
+      <p>Pour un devis, une inscription à une formation, ou simplement une question.</p>
+
+      <!-- Remplacer VOTRE_ID_FORMSPREE par votre ID sur formspree.io -->
+      <form action="https://formspree.io/f/mvznkkov" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c-nom">Prénom & Nom *</label>
+            <input type="text" id="c-nom" name="nom" placeholder="Aminata Traoré" required>
+          </div>
+          <div class="form-group">
+            <label for="c-email">Email *</label>
+            <input type="email" id="c-email" name="email" placeholder="aminata@exemple.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c-tel">Téléphone / WhatsApp</label>
+            <input type="text" id="c-tel" name="telephone" placeholder="+223 XX XX XX XX">
+          </div>
+          <div class="form-group">
+            <label for="c-objet">Objet de la demande</label>
+            <select id="c-objet" name="objet">
+              <option value="">-- Choisir --</option>
+              <option>Demande de devis — Conseil</option>
+              <option>Inscription — Formation R</option>
+              <option>Projet Lab / Rapport</option>
+              <option>Question générale</option>
+              <option>Partenariat / collaboration</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="c-message">Votre message *</label>
+          <textarea id="c-message" name="message"
+            placeholder="Décrivez votre projet, votre question ou votre préoccupation…" required></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="Message reçu — QIBAR Center">
+        <input type="hidden" name="_next" value="https://boozygit.github.io/qibar/merci.html">
+
+        <button type="submit" class="btn-primary" style="width:100%;padding:.75rem;font-size:.92rem">
+          Envoyer le message →
+        </button>
+        <p style="font-size:.76rem;color:var(--qibar-gris);text-align:center;margin-top:.75rem">
+          Réponse garantie sous 48h · Confidentialité assurée
+        </p>
+      </form>
+    </div>
+
+    <!-- Infos de contact -->
+    <div class="contact-info">
+
+      <div class="response-box">
+        <span class="rb-val">48h</span>
+        <span class="rb-label">Délai de réponse garanti</span>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item-icon">✉️</div>
+        <div>
+          <p class="contact-item-label">Email</p>
+          <p class="contact-item-val">
+            <a href="mailto:mahamoud.koureichi@gmail.com">
+              mahamoud.koureichi@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item-icon">📱</div>
+        <div>
+          <p class="contact-item-label">WhatsApp</p>
+          <p class="contact-item-val">
+            <a href="https://wa.me/22300000000" target="_blank">
+              +223 66 88 21 52
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item-icon">🔗</div>
+        <div>
+          <p class="contact-item-label">LinkedIn</p>
+          <p class="contact-item-val">
+            <a href="https://linkedin.com/in/mahamoud-mahamadou-koureichi-b6a1361a7/" target="_blank">
+              QIBAR Center
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item-icon">📍</div>
+        <div>
+          <p class="contact-item-label">Localisation</p>
+          <p class="contact-item-val">Bamako, Mali<br>
+            <span style="font-size:.82rem;color:var(--qibar-gris)">Missions à distance disponibles</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-item-icon">📝</div>
+        <div>
+          <p class="contact-item-label">Blog QIBAR</p>
+          <p class="contact-item-val">
+            <a href="https://boozygit.github.io/Blog/" target="_blank">
+              boozygit.github.io/Blog
+            </a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+```

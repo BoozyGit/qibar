@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>about – QIBAR Center</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+<link href="./images/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-html-5acaefe6876f2fc5583d865d9e6bf35c.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2486e1f0a3ee9ee1fc393803a1361cdb.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="QIBAR Center — Data · Research · Formation">
+<meta property="og:description" content="Analyse de données, épidémiologie et formation R pour chercheurs et institutions en Afrique.">
+<meta property="og:image" content="images/og.png">
+<meta property="og:site_name" content="QIBAR Center">
+</head>
+
+<body>
+
+
+
+
+
+<style>
+/* ── Page About — Site vitrine QIBAR ───────────────────────────────────── */
+.about-hero {
+  background: linear-gradient(135deg, #0C2440, #1A3A5C);
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+}
+.about-hero h1 {
+  color: #fff;
+  font-family: Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin: 0 0 .6rem;
+  border: none; padding: 0;
+}
+.about-hero h1 span { color: #C8A96E; }
+.about-hero p { color: #B5C8DD; font-size: 1rem; margin: 0; }
+
+/* Layout bio */
+.bio-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3rem;
+  align-items: start;
+  margin: 3rem 0;
+}
+@media (max-width: 768px) {
+  .bio-grid { grid-template-columns: 1fr; }
+}
+
+/* Carte photo */
+.photo-card {
+  background: #fff;
+  border: 0.5px solid var(--qibar-bordure);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 80px;
+}
+.photo-card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+}
+.photo-info { padding: 1.1rem 1.2rem; }
+.photo-name {
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1A3A5C;
+  margin: 0 0 3px;
+}
+.photo-title { font-size: .80rem; color: #7A7068; margin: 0 0 1rem; line-height: 1.5; }
+.photo-badges { display: flex; flex-direction: column; gap: 6px; }
+.photo-badge {
+  font-size: .76rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.pb-blue   { background: #EEF2F7; color: #1A3A5C; }
+.pb-gold   { background: #FBF5EB; color: #8B6F3A; }
+.pb-green  { background: #EBF5F0; color: #2D7A5F; }
+.pb-purple { background: #F3EEFA; color: #6B4C9A; }
+.pb-pink   { background: #FCEEF3; color: #8B2252; }
+
+/* Bio texte */
+.bio-text h2 {
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  color: #1A3A5C;
+  margin: 0 0 .75rem;
+  border: none; padding: 0;
+}
+.bio-text p { font-size: .97rem; color: #3D3428; line-height: 1.75; }
+
+/* Timeline */
+.timeline { margin: 1.5rem 0; position: relative; padding-left: 1.5rem; }
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 4px; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #C8A96E, #1A3A5C);
+}
+.tl-item { margin-bottom: 1.25rem; position: relative; }
+.tl-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  background: #C8A96E;
+  position: absolute;
+  left: -1.5rem; top: 5px;
+  margin-left: -1px;
+}
+.tl-year {
+  font-size: .75rem; font-weight: 700;
+  color: #C8A96E; text-transform: uppercase;
+  letter-spacing: .07em; display: block; margin-bottom: 2px;
+}
+.tl-title { font-size: .92rem; font-weight: 600; color: #1A3A5C; margin: 0 0 2px; }
+.tl-sub   { font-size: .84rem; color: #7A7068; margin: 0; }
+
+/* Stack technique */
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
+  margin: 1rem 0;
+}
+.stack-item {
+  background: #fff;
+  border: 0.5px solid var(--qibar-bordure);
+  border-radius: var(--radius-sm);
+  padding: .65rem .9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: var(--shadow-sm);
+}
+.stack-icon { font-size: 1.1rem; flex-shrink: 0; }
+.stack-name { font-size: .82rem; font-weight: 600; color: #1A3A5C; margin: 0; }
+
+/* ── Section ORCID ──────────────────────────────────────────────────────── */
+.orcid-banner {
+  background: linear-gradient(135deg, #0C2440, #1A3A5C);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+  margin: 2rem 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .orcid-banner { grid-template-columns: 1fr; }
+}
+.orcid-left .orcid-label {
+  font-size: .72rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .09em;
+  color: #C8A96E; margin: 0 0 .5rem; display: block;
+}
+.orcid-left h3 {
+  font-family: Georgia, serif;
+  font-size: 1.1rem; color: #fff;
+  margin: 0 0 .4rem; border: none; padding: 0;
+}
+.orcid-id-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(200,169,110,.15);
+  border: 1px solid rgba(200,169,110,.35);
+  border-radius: 8px;
+  padding: 6px 14px;
+  margin: .5rem 0;
+}
+.orcid-id-box .orcid-logo {
+  width: 18px; height: 18px;
+  background: #A6CE39;
+  border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 10px; font-weight: 700; color: #fff;
+  flex-shrink: 0;
+}
+.orcid-id-box code {
+  font-family: monospace;
+  font-size: .88rem;
+  color: #F0EBE3;
+  letter-spacing: .04em;
+}
+.orcid-left p {
+  font-size: .84rem; color: #7A9AB8;
+  margin: .5rem 0 1rem; line-height: 1.55;
+}
+.orcid-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #A6CE39;
+  color: #1A3A5C;
+  font-weight: 700;
+  font-size: .85rem;
+  padding: .55rem 1.3rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: opacity .2s;
+}
+.orcid-btn:hover { opacity: .88; text-decoration: none; color: #1A3A5C; }
+
+/* QR code */
+.orcid-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.orcid-qr img {
+  width: 110px; height: 110px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 6px;
+}
+.orcid-qr span {
+  font-size: .7rem;
+  color: #7A9AB8;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Publications */
+.pub-list { list-style: none; padding: 0; margin: 1rem 0; }
+.pub-item {
+  background: #fff;
+  border: 0.5px solid var(--qibar-bordure);
+  border-left: 4px solid #C8A96E;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 1rem 1.2rem;
+  margin-bottom: .75rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform .15s;
+}
+.pub-item:hover { transform: translateX(3px); }
+.pub-type {
+  font-size: .72rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: .07em;
+  color: #C8A96E; display: block; margin-bottom: 4px;
+}
+.pub-title { font-size: .92rem; font-weight: 600; color: #1A3A5C; margin: 0 0 4px; line-height: 1.45; }
+.pub-meta  { font-size: .82rem; color: #7A7068; margin: 0; font-style: italic; }
+.pub-links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+.pub-link {
+  font-size: .78rem; font-weight: 600;
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 3px;
+  padding: 2px 10px;
+  border-radius: 99px;
+  transition: opacity .15s;
+}
+.pub-link:hover { opacity: .8; text-decoration: none; }
+.pl-doi    { background: #EEF2F7; color: #1A3A5C; }
+.pl-orcid  { background: #F0FAE0; color: #5A7A1A; }
+
+/* ORCID total footer */
+.orcid-footer-note {
+  background: #F5F2EE;
+  border-radius: var(--radius-md);
+  padding: .9rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: .5rem;
+  font-size: .84rem;
+  color: #5F5E5A;
+}
+.orcid-footer-note .of-icon {
+  width: 32px; height: 32px;
+  background: #A6CE39;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .8rem; font-weight: 700; color: #fff;
+  flex-shrink: 0;
+}
+
+/* Vision */
+.vision-box {
+  background: linear-gradient(135deg, #0C2440, #1A3A5C);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  margin: 2.5rem 0;
+  text-align: center;
+}
+.vision-box blockquote {
+  font-family: Georgia, serif;
+  font-size: 1.2rem; font-style: italic;
+  color: #F0EBE3; line-height: 1.7;
+  margin: 0 0 1rem; border: none; padding: 0;
+}
+.vision-box blockquote span { color: #C8A96E; }
+.vision-box cite { font-size: .85rem; color: #7A9AB8; font-style: normal; }
+
+.sec-hd {
+  font-size: 11px; font-weight: 500; text-transform: uppercase;
+  letter-spacing: .09em; color: var(--qibar-gris);
+  margin: 2rem 0 .9rem; padding-bottom: 5px;
+  border-bottom: 2px solid #C8A96E;
+  display: inline-block;
+}
+</style>
+
+<!-- HERO -->
+<div class="about-hero">
+  <h1>À propos de <span>QIBAR</span></h1>
+  <p>Médecin · Épidémiologiste · Data Analyst — au service de la recherche en santé africaine</p>
+</div>
+
+<div class="page-content">
+
+  <!-- BIO PRINCIPALE -->
+  <div class="bio-grid">
+
+    <!-- Colonne gauche : photo + badges -->
+    <div class="photo-card">
+      <img src="images/Identité.png" alt="Mahamoud M. Koureichi — QIBAR Center">
+      <div class="photo-info">
+        <p class="photo-name">Mahamoud M. KOUREICHI</p>
+        <p class="photo-title">
+          Dr. en Médecine · MPH Épidémiologie<br>
+          Data Manager · CRLD &amp; IDMERTC · Bamako
+        </p>
+        <div class="photo-badges">
+          <span class="photo-badge pb-blue">🎓 Doctorat en médecine</span>
+          <span class="photo-badge pb-gold">📊 Master Santé Publique · Épidémiologie</span>
+          <span class="photo-badge pb-pink">💻 DIU Informatique médical · e-Santé</span>
+          <span class="photo-badge pb-green">🗺️ DU Dermatologie Tropicale</span>
+          <span class="photo-badge pb-purple">⚙️ R · Quarto · Git</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Colonne droite : texte bio -->
+    <div class="bio-text">
+      <h2 class="anchored">Qui suis-je ?</h2>
+      <p>
+        Je suis médecin, titulaire d'un master en santé publique option épidémiologie,
+        et data manager au Centre de Recherche et de Lutte contre la Drépanocytose (CRLD)
+        à Bamako, ainsi qu'assistant de recherche au sein de l'Infectious Diseases and
+        Medical Entomology Research and Training Center (IDMERTC). Je poursuis en parallèle
+        un PhD en recherche de mise en œuvre.
+      </p>
+      <p>
+        Depuis plusieurs années, j'accompagne chercheurs, étudiants et institutions
+        dans l'analyse de leurs données — d'abord dans un cadre informel, puis de façon
+        structurée à travers <strong>QIBAR Center</strong>. Ma conviction : en Afrique,
+        la qualité des données de santé est rarement un problème — c'est leur
+        <em>analyse rigoureuse et leur valorisation</em> qui manquent.
+      </p>
+      <p>
+        Je me forme de façon autodidacte et continue sur R — analyse quantitative,
+        cartographie épidémiologique, modélisation, méta-analyse, analyse lexicale —
+        et je partage ce que j'apprends via le blog QIBAR.
+      </p>
+
+      <p class="sec-hd">Parcours</p>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <span class="tl-year">2025 — En cours</span>
+          <p class="tl-title">Assistant de Recherche &amp; Data Manager</p>
+          <p class="tl-sub">Centre de Recherche et de Lutte contre la Drépanocytose (CRLD) · Bamako</p>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <span class="tl-year">2023 — En cours</span>
+          <p class="tl-title">Data Manager</p>
+          <p class="tl-sub">Infectious Diseases and Medical Entomology Research and Training Center (IDMERTC) · Bamako</p>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <span class="tl-year">2026</span>
+          <p class="tl-title">DU Dermatologie Tropicale</p>
+          <p class="tl-sub">Formation continue · Diagnostic des dermatoses infectieuses et parasitaires courantes</p>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <span class="tl-year">2026</span>
+          <p class="tl-title">DIU Informatique médical · e-Santé</p>
+          <p class="tl-sub">Formation continue · Conduite de projet de santé numérique</p>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <span class="tl-year">2025</span>
+          <p class="tl-title">Master en Santé Publique — option Épidémiologie</p>
+          <p class="tl-sub">DERSP / FMOS / USTTB · Bamako</p>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <span class="tl-year">2022</span>
+          <p class="tl-title">Doctorat en Médecine</p>
+          <p class="tl-sub">Faculté de Médecine et d'Odonto-Stomatologie · USTTB · Bamako</p>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-dot" style="background:#1A3A5C"></div>
+          <span class="tl-year" style="color:#1A3A5C">2026</span>
+          <p class="tl-title">Fondation de QIBAR Center</p>
+          <p class="tl-sub">Structure d'analyse de données, formation et recherche · Bamako</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div><!-- /bio-grid -->
+
+  <!-- STACK TECHNIQUE -->
+  <p class="sec-hd">Stack technique</p>
+  <div class="stack-grid">
+    <div class="stack-item"><span class="stack-icon">📦</span><p class="stack-name">R / Tidyverse</p></div>
+    <div class="stack-item"><span class="stack-icon">📊</span><p class="stack-name">ggplot2</p></div>
+    <div class="stack-item"><span class="stack-icon">📋</span><p class="stack-name">gtsummary</p></div>
+    <div class="stack-item"><span class="stack-icon">🗺️</span><p class="stack-name">sf / tmap</p></div>
+    <div class="stack-item"><span class="stack-icon">🔬</span><p class="stack-name">meta / metafor</p></div>
+    <div class="stack-item"><span class="stack-icon">📱</span><p class="stack-name">R Shiny</p></div>
+    <div class="stack-item"><span class="stack-icon">📄</span><p class="stack-name">Quarto</p></div>
+    <div class="stack-item"><span class="stack-icon">🔀</span><p class="stack-name">Git / GitHub</p></div>
+    <div class="stack-item"><span class="stack-icon">📲</span><p class="stack-name">KoboToolbox</p></div>
+    <div class="stack-item"><span class="stack-icon">📚</span><p class="stack-name">Zotero</p></div>
+  </div>
+
+  <!-- ── ORCID & PUBLICATIONS ──────────────────────────────────────────── -->
+  <p class="sec-hd" style="margin-top:2.5rem">Publications &amp; travaux</p>
+
+  <!-- Bandeau ORCID -->
+  <div class="orcid-banner">
+    <div class="orcid-left">
+      <span class="orcid-label">Identifiant chercheur</span>
+      <h3 class="anchored">Profil ORCID vérifié</h3>
+      <div class="orcid-id-box">
+        <span class="orcid-logo">iD</span>
+        <code>0009-0003-8347-7030</code>
+      </div>
+      <p>
+        L'ensemble de mes travaux, affiliations et contributions sont
+        centralisés et vérifiés sur mon profil ORCID — la référence
+        internationale pour l'identité des chercheurs.
+      </p>
+      <a href="https://orcid.org/0009-0003-8347-7030" target="_blank" class="orcid-btn">
+        <span>iD</span> Voir mon profil ORCID →
+      </a>
+    </div>
+    <div class="orcid-qr">
+      <img src="images/orcid-qr.png" alt="QR Code ORCID — Mahamoud M. Koureichi">
+      <span>Scanner pour<br>accéder au profil</span>
+    </div>
+  </div>
+
+  <!-- Liste des publications -->
+  <ul class="pub-list">
+
+    <!-- ↓↓↓ REMPLACER PAR VOS VRAIES PUBLICATIONS ↓↓↓
+         Format : copier/coller un <li class="pub-item"> par publication.
+         Les types disponibles : Article scientifique · Thèse · Communication orale
+         Affiche de congrès · Rapport de recherche · Preprint
+    -->
+
+    <li class="pub-item">
+      <span class="pub-type">Thèse de doctorat en médecine</span>
+      <p class="pub-title">
+        Evaluation de la première année de prise en charge des patients atteints de la maladie à Coronavirus 2019 au niveau du site de prise en charge COVID-19 de l’Hôpital de Dermatologie de Bamako, Mali
+      </p>
+      <p class="pub-meta">
+        Koureichi, M.M. (2022). Faculté de Médecine et d'Odonto-Stomatologie, USTTB · Bamako, Mali.
+      </p>
+      <div class="pub-links">
+        <a href="https://www.bibliosante.ml/handle/123456789/5609" target="_blank" class="pub-link pl-orcid">
+          Voir sur Bibliosanté.ml
+        </a>
+      </div>
+    </li>
+
+    <li class="pub-item">
+      <span class="pub-type">Mémoire de master · Santé publique</span>
+      <p class="pub-title">
+        Etude des barrières et des facilitateurs de la non-réception de l’information relative au traitement de masse ciblant l’onchocercose dans les districts sanitaires de Kéniéba, de Kita et de Sagabari au Mali : étude transversale
+      </p>
+      <p class="pub-meta">
+        Koureichi, M.M. (2025). DERSP / FMOS / USTTB · Bamako, Mali.
+      </p>
+      <div class="pub-links">
+        <a href="" target="_blank" class="pub-link pl-orcid">
+          Données non publiées
+        </a>
+      </div>
+    </li>
+
+    <li class="pub-item">
+      <span class="pub-type">Article scientifique — à venir</span>
+      <p class="pub-title">
+        Evaluation Of Dosage Errors During Mass Treatment Campaigns Targeting Lymphatic Filariasis And Onchocerciasis In The Health Districts Of Bougouni And Kolondièba, Mali
+      </p>
+      <p class="pub-meta">
+        Koureichi, M.M. et al. (2025). <em>MALI MÉDICAL</em> — [statut : Publié].
+      </p>
+      <div class="pub-links">
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12378588/" target="_blank" class="pub-link pl-orcid">
+          Voir sur PubMed
+        </a>
+      </div>
+    </li>
+
+  </ul>
+
+  <!-- Note ORCID bas de section -->
+  <div class="orcid-footer-note">
+    <div class="of-icon">iD</div>
+    <span>
+      La liste complète et à jour de mes travaux est disponible sur mon profil ORCID :
+      <a href="https://orcid.org/0009-0003-8347-7030" target="_blank" style="color:#1A3A5C;font-weight:600">
+        orcid.org/0009-0003-8347-7030
+      </a>
+      — ou scannez le QR code ci-dessus.
+    </span>
+  </div>
+
+  <!-- VISION -->
+  <div class="vision-box">
+    <blockquote>
+      « En Afrique, les données de santé ne manquent pas —
+      c'est leur <span>analyse rigoureuse et leur valorisation</span>
+      qui font défaut. QIBAR existe pour combler cet écart,
+      un projet à la fois. »
+    </blockquote>
+    <cite>— Mahamoud M. Koureichi, Fondateur · QIBAR Center</cite>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <p><strong>Vous voulez collaborer ou en savoir plus sur QIBAR ?</strong><br>
+       Je réponds à toutes les demandes sous 48h insha-Allah.</p>
+    <a href="contact.html" class="btn-primary">Nous contacter →</a>
+  </div>
+
+</div>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+  tabsets.forEach(function(tabset) {
+    const tabby = new Tabby('#' + tabset.id);
+  });
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'light-border',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

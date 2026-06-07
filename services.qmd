@@ -53,7 +53,7 @@ toc: false
     </div>
   </div>
 
-  <p>Vous avez des données collectées sur le terrain, dans un hôpital, via KoboToolbox ou Excel.
+  <p>Vous avez des données collectées sur le terrain, dans un hôpital, via KoboToolbox, ODK ou Excel.
      Vous avez besoin d'analyses rigoureuses, de tableaux publication-ready, et quelqu'un qui comprend
      à la fois le contexte clinique <em>et</em> les méthodes statistiques. C'est QIBAR Conseil.</p>
 
@@ -134,7 +134,7 @@ toc: false
       <p class="offer-name">Initiation à R</p>
       <p class="offer-desc">Import de données, nettoyage, statistiques descriptives, premiers graphiques ggplot2.</p>
       <p class="offer-price" style="color:#2D7A5F">30 000 – 50 000 FCFA</p>
-      <p class="offer-price-note">Par personne · 2 séances de 2h</p>
+      <p class="offer-price-note">Par personne · 3 séances de 2h</p>
     </div>
     <div class="offer-card">
       <p class="offer-name">Analyse épidémiologique</p>
