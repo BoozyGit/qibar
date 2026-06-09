@@ -7,7 +7,6 @@ website:
   description: "Analyse de données, recherche et formation en santé — Bamako, Mali"
   favicon: images/favicon.png
 
-  # ── Navbar ────────────────────────────────────────────────────────────
   navbar:
     title: false
     background: "#1A3A5C"
@@ -29,30 +28,29 @@ website:
         href: "https://boozygit.github.io/Blog/"
         target: "_blank"
 
-  # ── Footer ────────────────────────────────────────────────────────────
   page-footer:
     background: "#0C2440"
     foreground: "#7A9AB8"
     left: "© 2026 **QIBAR Center** · Bamako, Mali"
     center: "*L'information au service de la décision.*"
     right:
+      - text: "À propos"
+        href: about.qmd
+      - text: "Contact"
+        href: contact.qmd
       - icon: envelope
         href: mailto:mahamoud.koureichi@gmail.com
-      - icon: linkedin
-        href: https://linkedin.com/in/mahamoud-mahamadou-koureichi-b6a1361a7/
       - icon: github
         href: https://github.com/boozygit
 
-  # ── Open Graph ────────────────────────────────────────────────────────
   open-graph:
     title: "QIBAR Center — Data · Research · Formation"
     description: "Analyse de données, épidémiologie et formation R pour chercheurs et institutions en Afrique."
     image: images/og.png
 
-# ── Format HTML ───────────────────────────────────────────────────────────
 format:
   html:
-    theme: none
+    theme: cosmo
     css: styles.css
     toc: false
     smooth-scroll: true
